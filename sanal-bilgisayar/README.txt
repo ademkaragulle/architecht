@@ -1,0 +1,1 @@
+Lütfen index1 dosyasından açılış yapınız.

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style3.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- Desktop -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 desktop-left">
+                <div id="desktop-folders" class="row flex-column">
+
+                </div>
+            </div>
+            <div id="document" class="col-11 desktop-right folder-passive">
+                <div class="document row flex-column">
+                    <div class="document-header d-flex justify-content-between ps-2 pe-0">
+                        <div class="d-flex justify-content-center align-items-center gap-2">
+                            <i class=" btn fa-solid fa-folder-open p-0"></i>
+                            <span>|</span>
+                            <span id="folder-name" class=" p-0">Document</span>
+                        </div>
+                        <div>
+                            <div id="close-folder" class="btn p-1 close px-3">&#10005;</div>
+                        </div>
+                    </div>
+                    <hr class="m-0">
+                    <div class="row p-0 m-0 document-body">
+                        <div id="file-explorer" class="document-left-side col-3 p-0 pt-2 border-end">
+
+                        </div>
+                        <div class="document-right-side col-9 p-0">
+                            <div id="folderBody" class="row d-flex folders m-2 gap-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+
+    <div id="modal">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">İmages</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="w-100" id="modalImg" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="initialize-left" class="col-6 initialize-left">
+
+                </div>
+                <div id="initialize-right" class="col-6 initialize-right">
+                    <div class="btn btn-initialize">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="btn btn-initialize">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <div class="btn btn-initialize">
+                        <i class="fa-solid fa-volume-low"></i>
+                    </div>
+                    <div class="text-light btn btn-initialize date">
+                        <div id="clock">14.30</div>
+                        <div id="date">12.12.2222</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/477489111e.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script3.js"></script>
+</body>
+
+</html>

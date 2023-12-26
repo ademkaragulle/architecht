@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown menu</title>
+
+    <style>
+        * {
+            font-size: 20px;
+        }
+
+        .header {
+            padding: 20px;
+        }
+
+        .header-nav-bar .menu-item {
+            cursor: pointer;
+            width: 150px;
+            margin: 10px;
+            padding: 10px 0;
+            float: left;
+            background-color: rgb(80, 80, 252);
+            color: #fff;
+        }
+
+        .menu-item a {
+            margin: 0 10px;
+        }
+
+        .menu-items ul {
+            display: none;
+            list-style: none;
+            padding: 0;
+        }
+
+        .dropdown:hover .menu-items ul {
+            display: block;
+        }
+
+        .menu-items ul li {
+            padding: 10px 20px;
+        }
+
+        .menu-items ul li:hover {
+            background-color: rgb(45, 45, 228);
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="header-nav-bar">
+            <div class="menu-item"><a href="">Anasayfa</a></div>
+            <div class="menu-item"><a href="">Hakkımızda</a></div>
+            <div class="dropdown menu-item">
+                <a class="dropdown-menu">Galeri</a>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="">Araba</a></li>
+                        <li><a href="">Ev</a></li>
+                        <li><a href="">Manzara</a></li>
+                        <li><a href="">Deniz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-item"><a href="">İletişim</a></div>
+        </nav>
+    </header>
+
+
+
+</body>
+
+</html>
