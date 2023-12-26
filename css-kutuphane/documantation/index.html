@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/library.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+
+</head>
+
+<body class="fo-fa-montserrat">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 responsive-left">
+                <!-- Navigation -->
+                <nav class="fixed-menu bg-secondary">
+                    <ul>
+                        <a href="#introduction">
+                            <li>Giriş</li>
+                        </a>
+                        <a href="#overview">
+                            <li>1-Düzen</li>
+                        </a>
+                        <a href="#grid-system">
+                            <li>2-Grid Sistem</li>
+                        </a>
+                        <a href="#color">
+                            <li>3- Renkler</li>
+                        </a>
+                        <a href="#font-size">
+                            <li>4- Yazı Büyüklüğü</li>
+                        </a>
+                        <a href="#font-family">
+                            <li>5- Yazı Ailesi</li>
+                        </a>
+                        <a href="#mar-pad">
+                            <li>6- Margin-Padding</li>
+                        </a>
+                        <a href="#slider">
+                            <li>7- Slider</li>
+                        </a>
+                        <a href="#table">
+                            <li>8- Tablolar</li>
+                        </a>
+                        <a href="#img-fluid">
+                            <li>9- Img-Fluid</li>
+                        </a>
+                        <a href="#buttons">
+                            <li>10- Butonlar</li>
+                        </a>
+                        <a href="#img-position">
+                            <li>11- Fotoğrafların Pozisyonları</li>
+                        </a>
+                        <a href="#nav-menu">
+                            <li>12- Nav-Menu</li>
+                        </a>
+                        <a href="#dropdown">
+                            <li>13- DropDown-Menu</li>
+                        </a>
+                        <a href="#form">
+                            <li>14- Formlar</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="col-9 col-sm-12 me-4 ms-4">
+                <!-- introduction -->
+                <div id="introduction" class="row m-4">
+                    <div class="col-9 col-md-12 introduction">
+                        <h1>Giriş</h1>
+                        <p>Bu Kütüphaneyi klasörünüze ekleyerek, html dosyanızda sizin için hazırlanan class'ları
+                            kullanarak hazır stillerden faydalanabilirsiniz</p>
+                        <p>Kütüphane responsive tasarıma uygun hazırlanmıştır. kütüphane size; grid sistem, arkaplan
+                            renkleri, metin renkleri, tablolar, formlar ve butonlar gibi hazır görünümler için kolaylık
+                            sağlar</p>
+                        <p>Aşağıda bulunan linke tıklayarak github üzerinden kütüphaneye erişebilirsiniz.</p>
+                        <a href="https://github.com/ademkaragulle/css-library" class="btn btn-outline-secondary"
+                            target="_blank">Github</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- overview -->
+                <div id="overview" class="row m-4">
+                    <div class="col-9 col-md-12 Overview">
+                        <h2>1- Düzen</h2>
+                        <p>"container" ve "container-fluid" olmak üzere iki kapsayıcıdan birini kullanarak websitenizin
+                            içeriğinin kapladığı alanı belirleyebilirsiniz</p>
+                        <h4>a-container</h4>
+                        <img class="img-fluid" src="./assets/images/container.png" alt="">
+                        <h4>b-container-fluid</h4>
+                        <img class="img-fluid" src="./assets/images/container-fluid.png" alt="">
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/container-container-fluid.png" alt="">
+                    </div>
+                </div>
+
+
+                <hr>
+
+                <!-- Grid Sistem -->
+                <div id="grid-system" class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>2- Grid Sistem</h2>
+                        <h4>a- Row Yapısı</h4>
+                        <p>Grid sistem kullanılarak hazırlanmış olan "row" classı ile bir satır oluşturabilirsiniz daha
+                            sonra içerisine ekleyeceğiniz elemanları "col-1" gibi classlar ile parçalayabilirsiniz.</p>
+                        <h4>b- Column Yapısı</h4>
+                        <p>Bir satırı 12 birim olarak kabul edilir. "col-1" ile "col-12" arasında değerler vererek html
+                            taglerinizin bir satırda kaç birimlik alan kaplayacağını belirleyebilirsiniz.</p>
+                        <h4>Responsive</h4>
+                        <p>Eğer responsive bir tasarım çıkarmak istiyorsanız class="col-4 col-md-6 col-sm-12" vermeniz
+                            gerekiyor. normal ekranda 3 tane yan yana div, md ekranda 2 tane yan yana div ve sm ekranda
+                            bir satırda sadece 1 tane div olarak kendini ayarlayacaktır.</p>
+                        <div class="row row-info tc-white">
+                            <div class="col-1 bg-secondary">
+                                .col-1
+                            </div>
+                            <div class="col-2 bg-dark ">
+                                .col-2
+                            </div>
+                            <div class="col-3 bg-secondary">
+                                .col-3
+                            </div>
+                            <div class="col-4 bg-dark ">
+                                .col-4
+                            </div>
+                            <div class="col-2 bg-secondary">
+                                .col-2
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row row-info tc-white">
+                            <div class="col-1 bg-dark ">
+                                .col-1
+                            </div>
+                            <div class="col-5 bg-secondary">
+                                .col-5
+                            </div>
+                            <div class="col-6 bg-dark ">
+                                .col-6
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row row-info">
+                            <div class="col-12 bg-dark tc-white">
+                                .col-12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/grid-sistem.png" alt="">
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Color -->
+                <div id="color" class="row color m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>3- Color</h2>
+                        <p>10 Farklı arkaplan rengi ve 10 farklı metin rengi belirlenmiş olup bu classları
+                            kullanabilirsiniz.</p>
+                        <h4>a-Background-Color</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="col-1 bg-red">.bg-red</div>
+                                <div class="col-1 bg-yellow">.bg-yellow</div>
+                                <div class="col-1 bg-green">.bg-green</div>
+                                <div class="col-1 bg-pink">.bg-pink</div>
+                                <div class="col-1 bg-blue">.bg-blue</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="col-1 bg-white">.bg-white</div>
+                                <div class="col-1 bg-dark tc-white">.bg-dark</div>
+                                <div class="col-1 bg-info">.bg-info</div>
+                                <div class="col-1 bg-danger">.bg-danger</div>
+                                <div class="col-1 bg-secondary">.bg-secondary</div>
+                            </div>
+                        </div>
+                        <h4>Text-Color</h4>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="col-1 tc-red ">.tc-red</div>
+                                <div class="col-1 tc-yellow">.tc-yellow</div>
+                                <div class="col-1 tc-green">.tc-green</div>
+                                <div class="col-1 tc-pink">.tc-pink</div>
+                                <div class="col-1 tc-blue">.tc-blue</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="col-1 tc-white">.tc-white</div>
+                                <div class="col-1 tc-dark">.tc-dark</div>
+                                <div class="col-1 tc-info">.tc-info</div>
+                                <div class="col-1 tc-danger">.tc-danger</div>
+                                <div class="col-1 tc-secondary">.tc-secondary</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/color.png" alt="">
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Font-Size -->
+                <div id="font-size" class="row font-size m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>4- Font-Size</h2>
+                        <p>10 Farklı font size ve 5 farklı başlık boyutu belirlenmiş olup bu classları
+                            kullanabilirsiniz.</p>
+                        <h4>a- Text Size</h4>
+                        <p>Metinler için oluşturulmuş font size'lar</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="psize-1">.psize-1</p>
+                                <p class="psize-2">.psize-2</p>
+                                <p class="psize-3">.psize-3</p>
+                                <p class="psize-4">.psize-4</p>
+                                <p class="psize-5">.psize-5</p>
+                                <p class="psize-6">.psize-6</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="psize-7">.psize-7</p>
+                                <p class="psize-8">.psize-8</p>
+                                <p class="psize-9">.psize-9</p>
+                                <p class="psize-10">.psize-10</p>
+                            </div>
+                        </div>
+
+                        <h4>b- Head Size</h4>
+                        <p>başlıklar için oluşturulmuş font size'lar</p>
+
+                        <div class="row">
+                            <div class="col-6 heads">
+                                <h5 class="hsize-1">.hsize-1</h5>
+                                <h5 class="hsize-2">.hsize-2</h5>
+                                <h5 class="hsize-3">.hsize-3</h5>
+                            </div>
+                            <div class="col-6 heads">
+                                <h5 class="hsize-4">.hsize-4</h5>
+                                <h5 class="hsize-5">.hsize-5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/font-size.png" alt="">
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Font Family -->
+                <div id="font-family" class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>5- Font Family</h2>
+                        <p>Hazırlanan 5 farklı Font ailesini aşağıdaki classlar yardımıyla kullanabilirsiniz</p>
+
+                        <h3>a- .fo-fa-poppins</h3>
+                        <p class="psize-10 fo-fa-montserrat">Lorem ipsum dolor sit amet consectetur adipisicingelit.</p>
+
+                        <h3>a- .fo-fa-roboto</h3>
+                        <p class="psize-10 fo-fa-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <h3>a- .fo-fa-sans</h3>
+                        <p class="psize-10 fo-fa-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <h3>a- .fo-fa-montserrat</h3>
+                        <p class="psize-10 fo-fa-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <h3>a- .fo-fa-garamond</h3>
+                        <p class="psize-10 fo-fa-garamond">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/font-family.png" alt="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Margin-Padding -->
+                <div id="mar-pad" class="row m-4 mar-pad">
+                    <div class="col-9 col-md-12">
+                        <h2>6- Margin-Padding</h2>
+                        <p>6 Farklı padding-margin boyutuna göre ihtiyacınıza göre sağdan, soldan, üstten, alttan veya
+                            her 4 taaraftan birden padding margin boşlukları bırakabilirsiniz.</p>
+                        <h4>a-Margin</h4>
+                        <div class="row border margin">
+                            <div class="col-2 col-md-6 bg-secondary m-0 row-info">
+                                m-0
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary m-1">
+                                m-1
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary m-2">
+                                m-2
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary m-3">
+                                m-3
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary m-4">
+                                m-4
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary m-5">
+                                m-5
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row border margin">
+                            <div class="col-2 col-md-6 bg-secondary m-0">
+                                m-0
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary ms-1">
+                                ms-1
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary mt-2">
+                                mt-2
+                            </div>
+                            <div class="col-2 col-md-6 col-md-6 bg-secondary mb-3">
+                                mb-3
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary me-4">
+                                me-4
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary m-5">
+                                m-5
+                            </div>
+                        </div>
+                        <h4>a-Padding</h4>
+                        <div class="row border padding">
+                            <div class="col-2 col-md-6 bg-secondary p-0 row-info">
+                                p-0
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary p-1">
+                                p-1
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary p-2">
+                                p-2
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary p-3">
+                                p-3
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary p-4">
+                                p-4
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary p-5">
+                                p-5
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row border padding">
+                            <div class="col-2 col-md-6 bg-secondary p-0">
+                                p-0
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary ps-1">
+                                ps-1
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary pt-2">
+                                pt-2
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary pb-3">
+                                pb-3
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary pe-4">
+                                pe-4
+                            </div>
+                            <div class="col-2 col-md-6 bg-secondary p-5">
+                                p-5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/margin-padding.png" alt="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Slider -->
+                <div id="slider" class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>7- Slider</h2>
+                        <p> 3 Farklı slider animasyonu oluşturulmuştur. bunlar "slider-1", "slider-2", "slider-3"
+                            class'ları kullanılarak oluşturabilirsiniz. Bu sliderlar oluşturulurken 3 fotoğraf bulunacak
+                            şekilde hazırlanmıştır. 3'den farklı fotoğraf bulundurulması durumunda style dosyası
+                            değiştirilmelidir. </p>
+                        <h4>a- slider-1</h4>
+
+
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div style="height: 200px;" class="slider-1">
+                                    <div class="slider-items">
+                                        <img src="./assets/images/slider-1.jpg" alt="">
+                                        <img src="./assets/images/slider-2.jpg" alt="">
+                                        <img src="./assets/images/slider-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <h4>b- slider-2</h4>
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div class="slider-3">
+                                    <div class="slider-items">
+                                        <img src="./assets/images/slider-1.jpg" alt="">
+                                        <img src="./assets/images/slider-2.jpg" alt="">
+                                        <img src="./assets/images/slider-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <h4>c- slider-3</h4>
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div class="slider-2">
+                                    <div class="slider-items">
+                                        <img src="./assets/images/slider-1.jpg" alt="">
+                                        <img src="./assets/images/slider-2.jpg" alt="">
+                                        <img src="./assets/images/slider-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/slider-1.png" alt="">
+                        <img class="img-fluid" src="./assets/images/slider-2.png" alt="">
+                        <img class="img-fluid" src="./assets/images/slider-3.png" alt="">
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Table -->
+
+                <div id="table" class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>8- Tablolar</h2>
+                        <h4 class="mt-5">a- Table responsive</h4>
+                        <div class="table-responsive ">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Ad</th>
+                                        <th>Soyad</th>
+                                        <th>E-Mail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Adem</td>
+                                        <td>Karagülle</td>
+                                        <td>ademkaragulle@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>6</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                        <!-- Table Bordered -->
+                        <h4 class="mt-5">b- Table Bordered</h4>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Ad</th>
+                                        <th>Soyad</th>
+                                        <th>E-Mail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Adem</td>
+                                        <td>Karagülle</td>
+                                        <td>ademkaragulle@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>6</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                        <!-- Table Striped -->
+
+                        <h4 class="mt-5">c- Table Striped</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Ad</th>
+                                        <th>Soyad</th>
+                                        <th>E-Mail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Adem</td>
+                                        <td>Karagülle</td>
+                                        <td>ademkaragulle@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>6</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
+                        <!-- Table Hovered -->
+
+                        <h4 class="mt-5">d- Table Hovered</h4>
+                        <div class="table-responsive">
+                            <table class="table table-hovered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Ad</th>
+                                        <th>Soyad</th>
+                                        <th>E-Mail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Adem</td>
+                                        <td>Karagülle</td>
+                                        <td>ademkaragulle@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>6</th>
+                                        <td>Lorem</td>
+                                        <td>İpsum</td>
+                                        <td>LoremIpsum@outlook.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/table-1.png" alt="">
+                        <img class="img-fluid" src="./assets/images/table-2.png" alt="">
+                        <img class="img-fluid" src="./assets/images/table-3.png" alt="">
+                        <img class="img-fluid" src="./assets/images/table-4.png" alt="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- img-fluid -->
+                <div id="img-fluid" class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>9- İmg Fluid</h2>
+                        <p>Fotoğraflar için 2 farklı class tanımlaması yapılmıştır. bunlar bulunduğu div'in genişliğine
+                            göre içerisine kendisini yerleştiriyor ve köşeli veya yuvarlak halde bulunabiliyor. </p>
+
+                        <div class="row">
+                            <div class="col-6 col-md-12">
+                                <h4>.img-fluid</h4>
+
+                                <div style="width: 200px; height: 120px;">
+                                    <img class="img-fluid" src="./assets/images/img-position.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="col-6 col-md-12">
+                                <h4>.img-fluid-rounded</h4>
+
+                                <div style="width: 200px; height: 120px;">
+                                    <img class="img-fluid-rounded" src="./assets/images/img-position.jpg" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/img-fluid.png" alt="">
+                        <img class="img-fluid" src="./assets/images/img-fluid-rounded.png" alt="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Buttons -->
+                <div id="buttons" class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>10- Butonlar</h2>
+                        <p>2 farklı buton tipi ve her buton tipi için 10 farklı renk class'ı oluşturulmuştur. sayfanızda
+                            bu classları kullanarak butonlarınızı stillendirebilirsiniz.</p>
+
+                        <div class="row">
+                            <div class="col-9 col-md-12">
+                                <div>
+                                    <div class="btn btn-outline-blue">dasda</div>
+                                    <a href="" class="btn btn-blue">dasda</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-outline-red">dasda</div>
+                                    <a href="" class="btn btn-red">dasda</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-outline-green">dasda</div>
+                                    <a href="" class="btn btn-green">dasda</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-outline-yellow">dasda</div>
+                                    <a href="" class="btn btn-yellow">dasda</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-outline-cyan">dasda</div>
+                                    <a href="" class="btn btn-cyan">dasda</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-outline-pink">dasda</div>
+                                    <a href="" class="btn btn-pink">dasda</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-outline-orange">dasda</div>
+                                    <a href="" class="btn btn-orange">dasda</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-outline-danger">dasda</div>
+                                    <a href="" class="btn btn-danger">dasda</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-outline-secondary">dasda</div>
+                                    <a href="" class="btn btn-secondary">dasda</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-outline-dark">dasda</div>
+                                    <a href="" class="btn btn-dark">dasda</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/buttons.png" alt="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- İmages Position -->
+                <div id="img-position" class="row m-4">
+                    <div class="col-9 col-md-12 img-pozition">
+                        <h2>11- Fotoğrafların Pozisyonu</h2>
+                        <p>
+                            Bir "img" etiketinin kapsayıcı elementine verilerek 4 farklı class oluşturulmuştur. Bunlar
+                            "x", "y", "x-y" eksenlerine göre içerisinde bulunan resmi ortalamaktadır. bir diğer class
+                            ise herhangi bir ortalama
+                            yapmadan sadece scrool eklemek için kullanılıyor.
+                        </p>
+                        <p>Boyutlar 200x200 px olan bir div'in içerisine bir fotoğraf ekleyelim ve aşağıdaki classları
+                            bu
+                            div'e sırasıyla verelim verelim;</p>
+                        <ul style="list-style: number;">
+                            <li>centered-image</li>
+                            <li>centered-height</li>
+                            <li>centered-width</li>
+                            <li>original-size-hidden</li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-sm-12">
+                                <div class="centered-image img-div">
+                                    <img src="./assets/images/img-position.jpg" alt="">
+                                </div>
+
+                                <div class="centered-height img-div">
+                                    <img src="./assets/images/img-position.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="col-6 col-md-6 col-sm-12">
+                                <div class="centered-width img-div">
+                                    <img src="./assets/images/img-position.jpg" alt="">
+                                </div>
+
+                                <div class="original-size-scrool img-div">
+                                    <img src="./assets/images/img-position.jpg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/img-position.png" alt="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Nav-Menu -->
+                <div id="nav-menu" class="row m-4">
+                    <div class="col-12">
+                        <h2>12- Navigation Menüleri</h2>
+                        <h4 class="mt-5">a-İnline Menü</h4>
+                        <div class="row">
+                            <div class="col-9 col-md-12">
+
+
+
+                                <nav class="inline-menu bg-secondary">
+                                    <ul>
+                                        <a href="#">
+                                            <li>Anasayfa</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Hakkımızda</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Hizmetler</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>İletişim</li>
+                                        </a>
+                                    </ul>
+                                </nav>
+
+
+
+                            </div>
+                        </div>
+                        <h4 class="mt-5">b-Block Menü</h4>
+                        <div class="row">
+                            <div class="col-9 col-md-12">
+
+
+                                <nav class="block-menu bg-secondary">
+                                    <ul>
+                                        <a href="#">
+                                            <li>Anasayfa</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Hakkımızda</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Hizmetler</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>İletişim</li>
+                                        </a>
+                                    </ul>
+                                </nav>
+
+
+                            </div>
+                        </div>
+                        <h4 class="mt-5">c-Standart Menü</h4>
+                        <div class="row">
+                            <div class="col-9 col-md-12">
+
+
+                                <nav class="standart-menu bg-secondary">
+                                    <ul>
+                                        <a href="#">
+                                            <li>Anasayfa</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Hakkımızda</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Hizmetler</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>İletişim</li>
+                                        </a>
+                                    </ul>
+                                </nav>
+
+
+                            </div>
+                        </div>
+                        <h4 class="mt-5 ">d-Fixed Menü</h4>
+                        <div class="row">
+                            <div class="col-9 col-md-12 fixed-menu-info">
+
+
+                                <nav class="fixed-menu bg-secondary">
+                                    <ul>
+                                        <a href="#">
+                                            <li>Anasayfa</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Hakkımızda</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Hizmetler</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>İletişim</li>
+                                        </a>
+                                    </ul>
+                                </nav>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/nav-1.png" alt="">
+                        <img class="img-fluid" src="./assets/images/nav-2.png" alt="">
+                        <img class="img-fluid" src="./assets/images/nav-3.png" alt="">
+                        <img class="img-fluid" src="./assets/images/nav-4.png" alt="">
+                    </div>
+                </div>
+
+
+                <hr>
+
+                <!-- DROPDOWN-MENU -->
+                <div id="dropdown" class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>13- Dropdown-Menu</h2>
+                        <p>Sağ tarafa açılan ve aşağı doğru açılan 2 farklı Dropdown-Menu hazırlanmıştır.</p>
+
+                        <h4 class="mt-5 ">a-Yana Açılan</h4>
+                        <div class="fixed-menu-info">
+
+
+
+                            <nav class="fixed-menu bg-secondary">
+                                <ul>
+                                    <a href="#">
+                                        <li>Anasayfa</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Hakkımızda</li>
+                                    </a>
+                                    <div class="dropdown-menu-left" href="#">
+                                        <li class="dropdown-toggle">
+                                            <span>Hizmetler</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </li>
+                                        <div class="dropdown-menu-items bg-secondary">
+                                            <a href="">Web Tasarım</a>
+                                            <a href="">SEO</a>
+                                            <a href="">E-Ticaret</a>
+                                        </div>
+                                    </div>
+                                    <a href="#">
+                                        <li>İletişim</li>
+                                    </a>
+                                </ul>
+                            </nav>
+
+
+
+                        </div>
+                        <h4 class="mt-5 ">b-Aşağı Açılan</h4>
+
+
+
+                        <nav class="inline-menu bg-secondary">
+                            <ul>
+                                <a href="#">
+                                    <li>Anasayfa</li>
+                                </a>
+                                <a href="#">
+                                    <li>Hakkımızda</li>
+                                </a>
+
+                                <div class="dropdown-menu bg-secondary">
+                                    <div class="dropdown-toggle">Hizmetler&nbsp;&nbsp; <i
+                                            class="fa-solid fa-chevron-down"></i></div>
+                                    <div style="text-align: start;" class="dropdown-menu-items bg-secondary">
+                                        <a href="">Web Tasarım</a>
+                                        <a href="">SEO</a>
+                                        <a href="">E-Ticaret</a>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <li>İletişim</li>
+                                </a>
+                            </ul>
+                        </nav>
+
+
+
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/dropdown-1.png" alt="">
+                        <img class="img-fluid" src="./assets/images/dropdown-2.png" alt="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Form Elamanları -->
+                <div id="form" class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h2>14- Form Elemanları</h2>
+                        <h4>a- input-control</h4>
+                        <p>İnput tagları için "input-control" kullanarak aşağıdaki stillere ulaşabilirsiniz.</p>
+
+                        <h4>b- label-control</h4>
+                        <p>Label tagları için "input-label" kullanarak aşağıdaki stillere ulaşabilirsiniz.</p>
+
+
+
+                        <form action="">
+                            <label class="input-head" for="ad">Ad:</label>
+                            <input class="input-control" type="text" name="" id="ad" placeholder="Kullanıcı Adı">
+                            <label class="input-head" for="password">Password</label>
+                            <input class="input-control" type="password" name="" id="password" placeholder="Şifre">
+                            <label class="input-head" for="email">E-mail</label>
+                            <input class="input-control" type="email" name="email" id="email" placeholder="E-posta">
+                            <label class="input-head" for="message">Message</label>
+                            <textarea class="input-control" name="" id="message" rows="4" cols="50"
+                                placeholder="Yorumunuzu buraya yazın..."></textarea>
+                            <Label class="input-head">Cinsiyet</Label>
+                            <label for="male">Erkek</label>
+                            <input class="" type="radio" id="male" name="gender" value="male">
+                            <label for="female">Kadın</label>
+                            <input class="" type="radio" id="female" name="gender" value="female">
+                            <Label class="input-head">Hobiler</Label>
+                            <label for="apple">Yüzme</label>
+                            <input class="" type="checkbox" id="apple" name="fruits" value="apple">
+                            <label for="banana">Kitap Okuma</label>
+                            <input class="" type="checkbox" id="banana" name="fruits" value="banana">
+                            <input class="input-control" type="submit"></input>
+                        </form>
+
+
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-9 col-md-12">
+                        <h3>Kod Penceresi</h3>
+                        <img class="img-fluid" src="./assets/images/form.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+
+        let a = true
+        let b = false
+        let c = true
+
+
+        if (a && b || a) {
+            console.log('true')
+        }
+        else {
+            console.log('false')
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
